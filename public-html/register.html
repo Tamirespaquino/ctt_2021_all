@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -14,58 +14,110 @@
       <div class="container">
            
         <nav class="nav">
-            <a class="nav-link active" href="#">Início</a>
+            <a class="nav-link" href="#">Início</a>
             <a class="nav-link" href="#">Listar veículos</a>
             <a class="nav-link" href="#">Registrar veículos</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </nav>
+        </nav>
 
-          <div class="row">
-              <div class="col-12">
-                  <h1>Registrar veículo</h1>
-                  <hr>
+      <div class="row">
+        <div class="col-12">
+          <h1>Registrar veículo</h1>
+          <hr>
 
-                  <form>
-                      <div class="row">
-                          <div class="col-lg-4 col-md-6 col-xs-12">
-                            <div class="form-group">
-                                <label>Marca: </label>
-                                <select class="form-control" id="marcaDoVeiculo">
-                                    <option value="0">Selecione a marca</option>
-                                    <option value="Chevrolet">Chevrolet</option>
-                                    <option value="Volksvagen">Volksvagen</option>
-                                </select>
-                                
-                              </div>
+              <form action="index.html">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                          <div class="form-group">
+                              <label>Marca: </label>
+                              <select class="form-control" id="marcaDoVeiculo" name="modeloDoVeiculo">
+                                  <option value="0">Selecione a marca</option>
+                                  <option value="Chevrolet">Chevrolet</option>
+                                  <option value="Volksvagen">Volkswagen</option>
+                              </select>
                           </div>
-                          <div class="col-lg-4 col-md-6 col-xs-12">
-                            <div class="form-group">
-                                <label>Modelo: </label>
-                                <select class="form-control" id="modeloDoVeiculo">
-                                    <option value="0">Selecione o modelo</option>
-
-                                    <optgroup label="Chevrolet">
-                                        <option value="Celta">Celta</option>
-                                    </optgroup>
-
-                                    <optgroup label="Volkswagen">
-                                        <option value="Kombi">Kombi</option>
-                                    </optgroup>
-                                    
-                                </select>
-                            </div>
-                          </div>
-                          <div class="col-lg-4 col-md-6 col-xs-12"> <!--xs - smartphone, xl-desktop convencional, l - resolucao 4k, lg-outros celulares -->
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                              </div>
-                          </div>
-                    
                         </div>
-                  </form>
-              </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                          <div class="form-group">
+                              <label>Modelo: </label>
+                              <select class="form-control" id="modeloDoVeiculo">
+                                  <option value="0">Selecione o modelo</option>
+
+                                  <optgroup label="Chevrolet">
+                                      <option value="Celta">Celta</option>
+                                  </optgroup>
+
+                                  <optgroup label="Volkswagen">
+                                      <option value="Kombi">Kombi</option>
+                                  </optgroup>
+                                  
+                              </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12"> <!--xs - smartphone, xl-desktop convencional, l - resolucao 4k, lg-outros celulares -->
+                          <label class="form-label">Cor: </label>
+                          <div class="form-check">
+                              <input type="radio" class="form-check-input" id="exampleRadios1" type="radio" name="exampleRadios" value="branco" checked>
+                              <label class="form-check-label" for="exampleRadios1">
+                                Branco
+                              </label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" class="form-check-input" id="exampleRadios1" type="radio" name="exampleRadios" value="vermelho">
+                            <label class="form-check-label" for="exampleRadios1">
+                              Vermelho
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                          <label class="form-label">Período de estadia: </label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Manhã" id="defaultCheck1">
+                            <label class="form-check=label" for="defaultCheck1">
+                              Manhã
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Tarde" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                              Tarde
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12" >
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Placa do Veículo: </label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <h2>Dados do Proprietário</h2>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                          <div class="form-group">
+                            <label class="form-label">Nome do Proprietário:</label>
+                            <input type="text" required name="nomeDoProprietario" class="fomr-control1">                      
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                          <div class="form-group">
+                            <label class="form-label">Data de Nascimento: </label>
+                            <input type="date" name="dataDeNascimento" class="form-control">
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                          <div class="form-group">
+                            <label class="form-label">Senha: </label>
+                            <input type="password" required name="senhaDoProprietario" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                      </div>
+              </form>
+            </div>
 
           </div>
       </div>

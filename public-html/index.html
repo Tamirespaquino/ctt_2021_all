@@ -66,10 +66,14 @@
                 <fieldset>
                     <legend>Formulário para registrar seu veículo</legend>
                     <label>Nome: </label>
-                    <input type="text" id="nome-do-veiculo" name="name">
+                    <input type="text" id="nome-do-veiculo" required name="name">
                     <hr>
-                    <label>Imagem do veículo</label>
+                    <label>Senha: </label>
+                    <input type="password" name="senhaEscondida">
+                    <hr>
+                    <label>Imagem do veículo: </label>
                     <input type="file" name="foto">
+                    <hr>
                     <label>Cor: </label>
                     <select name="cor">
                         <option value="0">Selecione alguma cor</option>
@@ -87,6 +91,10 @@
 
                     <label>Descrição: </label>
                     <textarea name="descricao" rows="20" cols="60"></textarea>
+
+                    <hr>
+
+                    <input type="submit" value="Registrar veículo">
                 </fieldset>
 
             </form>
